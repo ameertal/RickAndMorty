@@ -1,0 +1,107 @@
+.RickAndMortyList {
+	
+}
+
+.RickAndMortyList {}
+
+.RickAndMortyList .cards-display {
+    background-color:aqua;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+}
+
+.RickAndMortyList .cards-display>* {
+    margin: 20px;
+}
+
+
+.RickAndMortyList table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    font-size: 16px;
+  }
+
+  .RickAndMortyList th, td {
+    padding: 12px;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .RickAndMortyList thead th {
+    background-color: #f2f2f2;
+    color: #444;
+  }
+
+  .RickAndMortyList tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .RickAndMortyList tbody td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+  }
+
+  @media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+
+    tbody td:before {
+      content: attr(data-label);
+      font-weight: bold;
+      display: inline-block;
+      width: 98%;
+      margin-bottom: 10px;
+      text-align: right;
+    }
+  }
+
+  
+.RickAndMortyList img {
+    width: 80px;
+    height: 50px;
+}
+
+
+.RickAndMortyList .dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.RickAndMortyList .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.RickAndMortyList .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.RickAndMortyList .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.RickAndMortyList .dropdown-content a:hover {background-color: #ddd;}
+
+.RickAndMortyList .dropdown:hover .dropdown-content {display: block;}
+
+.RickAndMortyList .dropdown:hover .dropbtn {background-color: #3e8e41;}
