@@ -75,7 +75,7 @@ function RickAndMortyList(): JSX.Element {
       <select value={displayst} onChange={handleChangeStatus}>
         <option value="All">All</option>
         <option value="Alive">Alive</option>
-        <option value="Unknown">Unknown</option>
+        <option value="unknown">Unknown</option>
         <option value="Dead">Dead</option>
       </select>
       <br />
