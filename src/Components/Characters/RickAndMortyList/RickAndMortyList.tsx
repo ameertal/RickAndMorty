@@ -9,7 +9,7 @@ function RickAndMortyList(): JSX.Element {
   const tableHeaders = ["id", "Name", "Status", "Species", "Image"];
   const [characters, setCharacters] = useState<Result[]>([]);
   let i: number = 1;
-  // Mounting
+  // Mounting 
   useEffect(() => {
     axios
       .get<RickAndMorty>(urlService.urls.characters)
