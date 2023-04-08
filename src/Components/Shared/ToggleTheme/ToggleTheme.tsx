@@ -6,20 +6,19 @@ import { toggleTheme } from "../../../Redux/ThemeAppState";
 import { useDispatch } from "react-redux";
 
 function ToggleTheme(): JSX.Element {
-    const dispatch = useDispatch();
+    
     const [theme, setTheme] = useState<Theme>(store.getState().themeReducer.theme);
-
+    const dispatch = useDispatch();
     const changeTheme = () => {
         if (theme === 'light-mode') {
             setTheme('dark-mode');
         } else {
             setTheme('light-mode');
         }
-
         // store.dispatch(toggleTheme(theme));
         dispatch(toggleTheme(theme));
-        console.log("theme: " + theme);
     }
+    
     return (
         <div className="ToggleTheme">
 			<button onClick={changeTheme}>{(theme==='light-mode'?'go dark':'go light')}</button>
